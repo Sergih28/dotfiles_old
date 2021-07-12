@@ -23,13 +23,7 @@ window:
 mouse:
   hide_when_typing: true
 
-cursor:
-  style:
-    shape: Beam
-    blinking: Off
-# blink_interval: 500
-
-# Binding alt + key
+# Binding alt + key for MacOS
 key_bindings:
   - { key: 10,        mods: Alt,    chars: "\x5c" } # barra invertida `\`
   - { key: 18,        mods: Alt,    chars: "\x7c" } # barra vertical `|`
