@@ -14,3 +14,6 @@ Just like if 'config' was 'git'
 `config status`
 
 `config add .filename`
+
+## How to install your dotfiles onto a new system
+[Guide](https://www.atlassian.com/git/tutorials/dotfiles)
