@@ -1,0 +1,78 @@
+shell:
+  program: /usr/local/bin/fish
+  args:
+  - -l
+  - -c
+  - "tmux attach || tmux"
+
+font:
+  normal:
+    family: 'FiraCode Nerd Font'
+    style: 'Regular'
+  bold:
+    family: 'FiraCode Nerd Font'
+    style: 'Bold'
+  size: 16.0
+  offset:
+    x: 1
+    y: 10
+
+window:
+  startup_mode: Maximized
+
+mouse:
+  hide_when_typing: true
+
+cursor:
+  style:
+    shape: Beam
+    blinking: Off
+# blink_interval: 500
+
+# Binding alt + key
+key_bindings:
+  - { key: 10,        mods: Alt,    chars: "\x5c" } # barra invertida `\`
+  - { key: 18,        mods: Alt,    chars: "\x7c" } # barra vertical `|`
+  - { key: Key2,      mods: Alt,    chars: "@" } # arroba `@`
+  - { key: Key3,      mods: Alt,    chars: "#" } # almohadilla/cardinalidad `#`
+  - { key: Key6,      mods: Alt,    chars: "¬" } # negación en lógica `¬`
+  - { key: 39,        mods: Alt,    chars: "{" } # abre llaves `{`
+  - { key: 42,        mods: Alt,    chars: "}" } # cierra llaves `}`
+  - { key: 33,        mods: Alt,    chars: "[" } # abre corchetes `[`
+  - { key: 30,        mods: Alt,    chars: "]" } # cierra corchetes `]`
+
+# Colors
+colors:
+  # Default colors
+  primary:
+    background: "#1E1E3F"
+    foreground: "#E1EFFF"
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: "#1E1E3F"
+    cursor: "#FAD000"
+
+  # Normal colors
+  normal:
+    black: "#000000"
+    red: "#EC3A37"
+    green: "#75e44c"
+    yellow: "#FAD000"
+    blue: "#6943FF"
+    magenta: "#FF2C70"
+    cyan: "#80FCFF"
+    white: "#FFFFFF"
+
+  # Bright colors
+  bright:
+    black: "#5C5C61"
+    red: "#3A37F5"
+    green: "#3AD900"
+    yellow: "#FAD000"
+    blue: "#6943FF"
+    magenta: "#FB94FF"
+    cyan: "#80FCFF"
+    white: "#2D2B55"
+
+background_opacity: 0.93
