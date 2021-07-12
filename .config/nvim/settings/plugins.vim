@@ -54,6 +54,7 @@ Plug 'matze/vim-move'                                        " Move lines
 Plug 'Rigellute/shades-of-purple.vim'                        " VSCODE Theme
 
 " MARKDOWN
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}      " Markdow Preview
 
 " MULTIPLE CURSORS
