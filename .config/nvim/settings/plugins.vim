@@ -32,10 +32,6 @@ Plug 'nvim-telescope/telescope.nvim'                         " Telescope
 Plug 'vim-airline/vim-airline'                               " Statusbar
 Plug 'vim-airline/vim-airline-themes'                        " Themes for statusbar
 
-" TABS
-Plug 'romgrk/barbar.nvim'                                    " Tab bar
-Plug 'kyazdani42/nvim-web-devicons'                          " Icons for tab bar
-
 " SYNTAX HIGHLIGHT
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'pantharshit00/vim-prisma'                              " Prisma Syntax Highlightning

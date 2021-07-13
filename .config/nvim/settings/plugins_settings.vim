@@ -44,8 +44,12 @@ require'nvim-treesitter.configs'.setup {
 }
 EOF
 
+"------------------------------------------------------------------------------"
+
 """ Colorize background colors with nvim-colorizer
 lua require('nvim-colorizer')
+
+"------------------------------------------------------------------------------"
 
 """ VIM-VISUAL-MULTI (MULTIPLE CURSORS)
 let g:VM_default_mappings                    = 0
@@ -55,3 +59,53 @@ let g:VM_maps["Add Cursor Up"]               = '<leader>k'
 let g:VM_maps['Find Under']                  = '<C-n>'
 let g:VM_maps['Find Subword Under']          = '<C-n>'
 let g:VM_maps["Select All"]                  = '<C-m>'
+
+"------------------------------------------------------------------------------"
+
+""" VIM-AIRLINE
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+"Shows buffer number. Disabled because due to other git plugins they are
+"usually not consecutive and it becomes useless to see a number it might not
+"be correct
+"let g:airline#extensions#tabline#buffer_idx_mode = 1
+
+"If it ever displays the symbols wrong, uncomment this
+"if !exists('g:airline_symbols')
+"  let g:airline_symbols = {}
+"endif
+"
+"" unicode symbols
+"let g:airline_left_sep = '»'
+"let g:airline_left_sep = '▶'
+"let g:airline_right_sep = '«'
+"let g:airline_right_sep = '◀'
+"let g:airline_symbols.colnr = ' ㏇:'
+"let g:airline_symbols.colnr = ' ℅:'
+"let g:airline_symbols.crypt = '🔒'
+"let g:airline_symbols.linenr = '☰'
+"let g:airline_symbols.linenr = ' ␊:'
+"let g:airline_symbols.linenr = ' ␤:'
+"let g:airline_symbols.linenr = '¶'
+"let g:airline_symbols.maxlinenr = ''
+"let g:airline_symbols.maxlinenr = '㏑'
+"let g:airline_symbols.branch = '⎇'
+"let g:airline_symbols.paste = 'ρ'
+"let g:airline_symbols.paste = 'Þ'
+"let g:airline_symbols.paste = '∥'
+"let g:airline_symbols.spell = 'Ꞩ'
+"let g:airline_symbols.notexists = 'Ɇ'
+"let g:airline_symbols.whitespace = 'Ξ'
+"
+"" powerline symbols
+"let g:airline_left_sep = ''
+"let g:airline_left_alt_sep = ''
+"let g:airline_right_sep = ''
+"let g:airline_right_alt_sep = ''
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.colnr = ' :'
+"let g:airline_symbols.readonly = ''
+"let g:airline_symbols.linenr = ' :'
+"let g:airline_symbols.maxlinenr = '☰ '
+"let g:airline_symbols.dirty='⚡'
