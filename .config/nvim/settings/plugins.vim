@@ -36,6 +36,7 @@ Plug 'vim-airline/vim-airline-themes'                        " Themes for status
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'pantharshit00/vim-prisma'                              " Prisma Syntax Highlightning
 Plug 'p00f/nvim-ts-rainbow'                                  " Rainbow color brackets
+Plug 'cespare/vim-toml'                                      " TOML Syntax Highlightning
 " Plug 'sheerun/vim-polyglot'                                " General Syntax Highlightning
 
 " TRACKING
