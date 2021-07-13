@@ -15,8 +15,8 @@ let mapleader = " "                             " Map leader key to space
 
 " SAVE
 nmap <leader>s :w<cr>
-" QUIT
-nmap <leader>q :q<cr>
+" QUIT BUFFER
+nmap <leader>q :bd<cr>
 
 " SPLITS
 nmap <leader>v :vsplit<cr>
@@ -27,6 +27,9 @@ nnoremap <silent> <leader>- :exe "resize -2"<CR>
 nnoremap <silent> <leader>> :exe "vertical resize +4"<CR>
 nnoremap <silent> <leader>< :exe "vertical resize -4"<CR>
 
+" MOVE THROUGH BUFFERS
+nmap <leader>bn :bn<cr>
+nmap <leader>bp :bp<cr>
 "------------------------------------------------------------------------------"
 
 """ MOVE LINES IN NORMAL MODE
@@ -65,6 +68,6 @@ nnoremap <silent> <leader>lg :LazyGit<CR>
 "------------------------------------------------------------------------------"
 
 """ NERDTree
-nnoremap <silent> <leader>nt :NERDTree<CR>
+nnoremap <silent> <leader>nt :NERDTreeToggle<CR>
 
 "------------------------------------------------------------------------------"
