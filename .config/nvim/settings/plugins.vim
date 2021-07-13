@@ -34,10 +34,11 @@ Plug 'vim-airline/vim-airline-themes'                        " Themes for status
 
 " SYNTAX HIGHLIGHT
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'pantharshit00/vim-prisma'                              " Prisma Syntax Highlightning
+Plug 'pantharshit00/vim-prisma'                              " Prisma Syntax Highlighting
 Plug 'p00f/nvim-ts-rainbow'                                  " Rainbow color brackets
-Plug 'cespare/vim-toml'                                      " TOML Syntax Highlightning
-" Plug 'sheerun/vim-polyglot'                                " General Syntax Highlightning
+Plug 'cespare/vim-toml'                                      " TOML Syntax Highlighting
+Plug 'dag/vim-fish'                                          " Fish Syntax Highlighting
+" Plug 'sheerun/vim-polyglot'                                " General Syntax Highlighting
 
 " TRACKING
 Plug 'wakatime/vim-wakatime'                                 " Wakatime
