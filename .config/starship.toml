@@ -1,0 +1,140 @@
+# ----- LINE BREAK -------------------------------------------------------------
+
+# Inserts a blank line between shell prompts
+add_newline             = true
+
+# ----- END OF LINE BREAK ------------------------------------------------------
+
+# ----- BATTERY ----------------------------------------------------------------
+
+# Symbols
+[battery]
+full_symbol             = "🔋 "
+charging_symbol         = "⚡️ "
+discharging_symbol      = "💀 "
+
+# Display discharing_symbol when capacity is between 0% and 10%
+[[battery.display]]
+threshold               = 10
+style                   = "bold red"
+
+# Display discharing_symbol when capacity is between 10% and 30%
+[[battery.display]]
+threshold               = 30
+style                   = "bold yellow"
+discharging_symbol      = "💦 "
+
+# Do not display any symbol when battery is over 30%
+# Display charging_symbol when battery is charging
+# Display full_symbol when battery is full
+
+# ----- END OF BATTERY ---------------------------------------------------------
+
+# ----- CHARACTER --------------------------------------------------------------
+
+# Replace the "❯" symbol in the prompt with
+[character]
+vicmd_symbol            = "[](bold cyan) "
+success_symbol          = "[➜](bold green) "
+error_symbol            = "[✗](bold red) "
+
+# ----- END OF CHARACTER -------------------------------------------------------
+
+# ----- COMMAND DURATION -------------------------------------------------------
+
+# Not showing how much time it took to complete the last command
+[cmd_duration]
+disabled                = true
+
+# ----- END OF COMMAND DURATION ------------------------------------------------
+
+# ----- DIRECTORY --------------------------------------------------------------
+
+[directory]
+style                   = "yellow"
+truncation_length       = 8
+truncation_symbol       = "*/"
+
+# ----- END OF DIRECTORY -------------------------------------------------------
+
+# ----- GIT --------------------------------------------------------------------
+
+[git_branch]
+format                  = "[$symbol$branch]($style)"
+style                   = "bold purple"
+symbol                  = " "
+
+[git_commit]
+format                  = " [\\($hash\\)]($style)"
+style                   = "green"
+only_detached           = true
+
+[git_status]
+format                  = '([$all_status$ahead_behind]($style) )'
+style                   = "bold red"
+conflicted              = "  ${count}"
+ahead                   = " ⇡${count}"
+behind                  = " ⇣${count}"
+diverged                = " ⇕${count}"
+untracked               = " ?${count}"
+stashed                 = " $${count}"
+modified                = " !${count}"
+staged                  = '[ ++\($count\)](green)'
+renamed                 = " »${count}"
+deleted                 = " ✘${count}"
+
+# ----- END OF GIT -------------------------------------------------------------
+
+# ----- LUA --------------------------------------------------------------------
+
+[lua]
+format                  = "[🌕 $version](bold blue) "
+
+# ----- END OF LUA -------------------------------------------------------------
+
+# ----- MEMORY -----------------------------------------------------------------
+
+# Show memory usage (ram + swap) if more than 70% is being used
+[memory_usage]
+disabled                = false
+format                  = "[${ram}( ${swap})]($style) "
+threshold               = 70
+style                   = "bold dimmed green"
+
+# ----- END OF MEMORY ----------------------------------------------------------
+
+# ----- NODEJS -----------------------------------------------------------------
+
+[nodejs]
+format                  = "[$symbol($version )]($style)"
+symbol                  = " "
+
+# ----- END OF NODEJS ----------------------------------------------------------
+
+# ----- PYTHON -----------------------------------------------------------------
+
+[python]
+disabled                = false
+format                  = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+symbol                  = " "
+
+# ----- END OF PYTHON ----------------------------------------------------------
+
+# ----- TIME -------------------------------------------------------------------
+
+[time]
+disabled                = false
+format                  = "[$time]($style) "
+style                   = "dimmed yellow"
+use_12hr                = true
+
+# ----- END OF TIME ------------------------------------------------------------
+
+[username]
+style_user              = "white bold"
+style_root              = "black bold"
+format                  = "[$user]($style) "
+disabled                = false
+show_always             = true
+
+# ----- END OF TIME ------------------------------------------------------------
