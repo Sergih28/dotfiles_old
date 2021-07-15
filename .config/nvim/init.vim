@@ -5,10 +5,13 @@
 "   /_/ |_/\___/\____/|___/___/_/  /_/   \____/\____/_/ /_/_/ /_/\__, /
 "                                                               /____/
 
-"------------------------------------------------------------------------------"
+" ------------------------------------------------------------------------------
 
 runtime settings/config.vim                     " GENERAL CONFIG
 runtime settings/plugins.vim                    " PLUGINS
 runtime settings/plugins_settings.vim           " PLUGINS SETTINGS
 runtime settings/mappings.vim                   " MAPPINGS
 runtime settings/theme.vim                      " THEME
+
+" Letters for titles in config files
+" figlet -f slant word

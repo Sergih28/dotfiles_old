@@ -5,34 +5,34 @@
 " /_/   /_/\__,_/\__, /_/_/ /_/____/
 "               /____/
 
-"------------------------------------------------------------------------------"
+" ------------------------------------------------------------------------------
 
-""" PLUGINS LIST
+" ----- PLUGINS LIST -----------------------------------------------------------
 
 call plug#begin('~/.vim/plugged')
 
-" NERDTREE
+" --- NERDTREE
 Plug 'preservim/nerdtree'                                    " NERDTree File explorer
 Plug 'ryanoasis/vim-devicons'                                " Icons in NERDTree
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'               " Colorize NERDTree files
 Plug 'xuyuanp/nerdtree-git-plugin'                           " Git Changes in NERDTree
 
-" GIT
+" --- GIT
 Plug 'tpope/vim-fugitive'                                    " Git Commands
 Plug 'rbong/vim-flog'                                        " Git Graph
 Plug 'airblade/vim-gitgutter'                                " Show Git Changes in line number col
 Plug 'kdheepak/lazygit.nvim'                                 " LazyGit
 
-" TELESCOPE
+" --- TELESCOPE
 Plug 'nvim-lua/popup.nvim'                                   " Telescope
 Plug 'nvim-lua/plenary.nvim'                                 " Telescope
 Plug 'nvim-telescope/telescope.nvim'                         " Telescope
 
-" STATUSBAR
+" --- STATUSBAR
 Plug 'vim-airline/vim-airline'                               " Statusbar
 Plug 'vim-airline/vim-airline-themes'                        " Themes for statusbar
 
-" SYNTAX HIGHLIGHT
+" --- SYNTAX HIGHLIGHT
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'pantharshit00/vim-prisma'                              " Prisma Syntax Highlighting
 Plug 'p00f/nvim-ts-rainbow'                                  " Rainbow color brackets
@@ -40,28 +40,28 @@ Plug 'cespare/vim-toml'                                      " TOML Syntax Highl
 Plug 'dag/vim-fish'                                          " Fish Syntax Highlighting
 " Plug 'sheerun/vim-polyglot'                                " General Syntax Highlighting
 
-" TRACKING
+" --- TRACKING
 Plug 'wakatime/vim-wakatime'                                 " Wakatime
 
-" IN EDITOR
+" --- IN EDITOR
 Plug 'Yggdroot/indentLine'                                   " Indent guides
 Plug 'norcalli/nvim-colorizer.lua'                           " CSS Color Background
 Plug 'matze/vim-move'                                        " Move lines
 
-" THEME
+" --- THEME
 Plug 'Rigellute/shades-of-purple.vim'                        " VSCODE Theme
 
-" MARKDOWN
+" --- MARKDOWN
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}      " Markdow Preview
 
-" MULTIPLE CURSORS
+" --- MULTIPLE CURSORS
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}          " Multiple cursors
 
-" COC
+" --- COC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}              " Conquer Of Completion
 
-" COC EXTENSIONS
+" --- COC EXTENSIONS
 let g:coc_global_extensions = [
     \ 'coc-tabnine',
     \ 'coc-tsserver',

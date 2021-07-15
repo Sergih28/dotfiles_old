@@ -5,9 +5,10 @@
 " /_/   /_/\__,_/\__, /_/_/ /_/____/   /____/\___/\__/\__/_/_/ /_/\__, /____/
 "               /____/                                           /____/
 
-"------------------------------------------------------------------------------"
+" ------------------------------------------------------------------------------
 
-""" NERDTREE
+" ----- NERDTREE ---------------------------------------------------------------
+
 let g:NERDTreeIgnore = ['^node_modules$']               " Ignore node_modules folder
 
 " vim-nerdtree-syntax-highlight
@@ -15,9 +16,10 @@ let g:NERDTreeFileExtensionHighlightFullName = 1        " Highlight Icon and Nam
 let g:NERDTreeExactMatchHighlightFullName = 1           " Highlight Icon and Name
 let g:NERDTreePatternMatchHighlightFullName = 1         " Highlight Icon and Name
 
-"------------------------------------------------------------------------------"
+" ------------------------------------------------------------------------------
 
-""" TELESCOPE
+" ----- TELESCOPE --------------------------------------------------------------
+
 lua << EOF
 require('telescope').setup{
   defaults = {
@@ -26,9 +28,10 @@ require('telescope').setup{
 }
 EOF
 
-"------------------------------------------------------------------------------"
+" ------------------------------------------------------------------------------
 
-""" TREE SITTER
+" ----- TREE SITTER ------------------------------------------------------------
+
 " install --> :TSInstall lang
 " list --> :TSInstallInfo
 lua <<EOF
@@ -44,14 +47,17 @@ require'nvim-treesitter.configs'.setup {
 }
 EOF
 
-"------------------------------------------------------------------------------"
+" ------------------------------------------------------------------------------
+
+" ----- COLORIZE BACKGROUND COLORS WITH nvim-colorizer -------------------------
 
 """ Colorize background colors with nvim-colorizer
 lua require('nvim-colorizer')
 
-"------------------------------------------------------------------------------"
+" ------------------------------------------------------------------------------
 
-""" VIM-VISUAL-MULTI (MULTIPLE CURSORS)
+" ----- VIM-VISUAL-MULTI (MULTIPLE CURSORS) ------------------------------------
+
 let g:VM_default_mappings                    = 0
 let g:VM_maps                                = {}
 let g:VM_maps["Add Cursor Down"]             = '<leader>j'
@@ -60,9 +66,9 @@ let g:VM_maps['Find Under']                  = '<C-n>'
 let g:VM_maps['Find Subword Under']          = '<C-n>'
 let g:VM_maps["Select All"]                  = '<C-m>'
 
-"------------------------------------------------------------------------------"
+" ------------------------------------------------------------------------------
 
-""" VIM-AIRLINE
+" ----- VIM-AIRLINE ------------------------------------------------------------
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
@@ -109,3 +115,5 @@ let g:airline_powerline_fonts = 1
 "let g:airline_symbols.linenr = ' :'
 "let g:airline_symbols.maxlinenr = '☰ '
 "let g:airline_symbols.dirty='⚡'
+
+" ------------------------------------------------------------------------------

@@ -5,7 +5,9 @@
 " \____/\____/_/ /_/_/ /_/\__, /
 "                        /____/
 
-"------------------------------------------------------------------------------"
+" ------------------------------------------------------------------------------
+
+" ----- GENERAL CONFIG ---------------------------------------------------------
 
 set number relativenumber               " Show relative and line number
 set expandtab                           " Replace tabs with white spaces
@@ -14,7 +16,10 @@ set scrolloff=10                        " When scrolling, keep 10 lines above / 
 set termguicolors                       " Enable 24 bit RGB color
 set hidden                              " Be able to switch buffers with unsaved changes
 
-" Highlight trailing white spaces
+" ------------------------------------------------------------------------------
+
+" ----- HIGHLIGHT TRAILING WHITE SPACES -----------------------------------------
+
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
@@ -23,14 +28,19 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" On insert mode, show only line number, not relative
+" ------------------------------------------------------------------------------
+
+" ----- ON INSERT MODE SHOW ONLY LINE NUMBER, NOT RELATIVE ---------------------
+
 :augroup numbertoggle
 :  autocmd!
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 :augroup END
 
-" Make sure it loads all syntax highlight when opening tsx / jsx files
+" ------------------------------------------------------------------------------
+
+" ----- MAKE SURE IT LOADS ALL SYNTAX HIGHLIGHT WHEN OPENING TSX / JSX FILES ---
+
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
-
