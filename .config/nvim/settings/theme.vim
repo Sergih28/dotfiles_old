@@ -18,7 +18,7 @@ let g:airline_theme='shades_of_purple'
 
 " ----- MAKE BACKGROUNDS TRANSPARENT -------------------------------------------
 
-" --- BAKCGROUND
+" --- BACKGROUND
 :hi normal guibg=000000
 
 " --- NUMBERS LINE
