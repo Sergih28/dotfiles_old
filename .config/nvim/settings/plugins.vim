@@ -58,6 +58,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 " --- MULTIPLE CURSORS
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}          " Multiple cursors
 
+" --- COLORS
+Plug 'amadeus/vim-convert-color-to'                          " Convert colors hex, hsl...
+
 " --- COC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}              " Conquer Of Completion
 
