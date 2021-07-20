@@ -47,6 +47,7 @@ Plug 'wakatime/vim-wakatime'                                 " Wakatime
 Plug 'Yggdroot/indentLine'                                   " Indent guides
 Plug 'norcalli/nvim-colorizer.lua'                           " CSS Color Background
 Plug 'matze/vim-move'                                        " Move lines
+Plug 'mattn/emmet-vim'                                       " Faster HTML writing
 
 " --- THEME
 Plug 'Rigellute/shades-of-purple.vim'                        " VSCODE Theme
@@ -69,6 +70,7 @@ let g:coc_global_extensions = [
     \ 'coc-tabnine',
     \ 'coc-tsserver',
     \ 'coc-prettier',
+    \ 'coc-pairs',
     \ ]
 "   \ 'coc-cssmodules',
 "   \ 'coc-css',
