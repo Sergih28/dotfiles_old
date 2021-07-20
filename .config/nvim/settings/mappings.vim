@@ -13,6 +13,9 @@ let mapleader = " "                             " Map leader key to space
 
 " ----- COMMON VIM MAPPINGS ----------------------------------------------------
 
+" SELECT ALL
+nnoremap <C-a> ggVG
+
 " SAVE
 nmap <leader>s :w<cr>
 " QUIT BUFFER
