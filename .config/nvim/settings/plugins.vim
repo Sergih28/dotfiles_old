@@ -48,6 +48,7 @@ Plug 'Yggdroot/indentLine'                                   " Indent guides
 Plug 'norcalli/nvim-colorizer.lua'                           " CSS Color Background
 Plug 'matze/vim-move'                                        " Move lines
 Plug 'mattn/emmet-vim'                                       " Faster HTML writing
+Plug 'dhruvasagar/vim-table-mode'                            " Table Mode
 
 " --- THEME
 Plug 'Rigellute/shades-of-purple.vim'                        " VSCODE Theme
