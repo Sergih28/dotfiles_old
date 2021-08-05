@@ -63,6 +63,8 @@ nnoremap <silent> <C-p> :Telescope find_files<CR>
 
 " ----- COC --------------------------------------------------------------------
 
+" :noa w        save file without reformatting on save
+
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
