@@ -8,5 +8,7 @@
     "typescriptreact"
   ],
   "tsserver.formatOnType": true,
-  "coc.preferences.formatOnType": false
+  "coc.preferences.formatOnType": false,
+  "prettier.semi": false,
+  "prettier.singleQuote": true
 }
