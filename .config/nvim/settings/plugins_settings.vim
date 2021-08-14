@@ -10,6 +10,7 @@
 " ----- NERDTREE ---------------------------------------------------------------
 
 let g:NERDTreeIgnore = ['^node_modules$']               " Ignore node_modules folder
+let g:NERDTreeShowHidden = 1
 
 " vim-nerdtree-syntax-highlight
 let g:NERDTreeFileExtensionHighlightFullName = 1        " Highlight Icon and Name
