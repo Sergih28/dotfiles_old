@@ -72,6 +72,7 @@ let g:coc_global_extensions = [
     \ 'coc-tsserver',
     \ 'coc-prettier',
     \ 'coc-pairs',
+    \ 'coc-vetur',
     \ ]
 "   \ 'coc-cssmodules',
 "   \ 'coc-css',
