@@ -49,4 +49,4 @@ autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 " ----- SET VUE FILETYPE AUTOMATICALLY -----------------------------------------
 
-autocmd BufReadPost,BufNewFile *.vue setfiletype html
+"autocmd BufReadPost,BufNewFile *.vue setfiletype html
