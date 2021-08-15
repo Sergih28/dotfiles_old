@@ -33,11 +33,14 @@ Plug 'vim-airline/vim-airline'                               " Statusbar
 Plug 'vim-airline/vim-airline-themes'                        " Themes for statusbar
 
 " --- SYNTAX HIGHLIGHT
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'pantharshit00/vim-prisma'                              " Prisma Syntax Highlighting
-Plug 'p00f/nvim-ts-rainbow'                                  " Rainbow color brackets
+"Plug 'p00f/nvim-ts-rainbow'                                  " Rainbow color brackets (need treesitter)
 Plug 'cespare/vim-toml'                                      " TOML Syntax Highlighting
 Plug 'dag/vim-fish'                                          " Fish Syntax Highlighting
+Plug 'pangloss/vim-javascript'                               " Javascript Syntax Highlighting
+Plug 'posva/vim-vue'                                         " Vue Syntax Highlighting
+Plug 'othree/html5.vim'
+"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Plug 'sheerun/vim-polyglot'                                " General Syntax Highlighting
 
 " --- TRACKING
@@ -52,6 +55,7 @@ Plug 'dhruvasagar/vim-table-mode'                            " Table Mode
 
 " --- THEME
 Plug 'Rigellute/shades-of-purple.vim'                        " VSCODE Theme
+Plug 'Th3Whit3Wolf/one-nvim'
 
 " --- MARKDOWN
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
@@ -72,8 +76,14 @@ let g:coc_global_extensions = [
     \ 'coc-tsserver',
     \ 'coc-prettier',
     \ 'coc-pairs',
+    \ 'coc-eslint',
+    \ 'coc-json',
+    \ 'coc-html',
     \ 'coc-vetur',
     \ ]
+"   \ '@yaegassy/coc-volar',
+"   \ 'coc-jsserver',
+"   \ 'coc-scss',
 "   \ 'coc-cssmodules',
 "   \ 'coc-css',
 

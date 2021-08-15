@@ -35,18 +35,19 @@ EOF
 
 " install --> :TSInstall lang
 " list --> :TSInstallInfo
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-  highlight = {
-    enable = true,
-  },
-  rainbow = {
-    enable = true,
-    extended_mode = true, -- Highlight also non-parentheses delimiters, boolean or table: lang -> boolean
-    max_file_lines = 10000, -- Do not enable for files with more than 1000 lines, int
-  }
-}
-EOF
+" install languages --> :TSInstall vue javascript typescript html css scss
+"lua <<EOF
+"require'nvim-treesitter.configs'.setup {
+"  highlight = {
+"    enable = true,
+"  },
+"  rainbow = {
+"    enable = true,
+"    extended_mode = true, -- Highlight also non-parentheses delimiters, boolean or table: lang -> boolean
+"    max_file_lines = 10000, -- Do not enable for files with more than 1000 lines, int
+"  }
+"}
+"EOF
 
 " ------------------------------------------------------------------------------
 

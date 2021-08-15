@@ -9,10 +9,14 @@ endif
 " ----- ENABLE THE THEME -------------------------------------------------------
 
 syntax enable
-colorscheme shades_of_purple
+"colorscheme shades_of_purple
+colorscheme one-nvim
+"autocmd! BufEnter,BufNewFile *.vue :colorscheme one-nvim
+"autocmd! BufLeave *.vue colorscheme shades_of_purple
 
-let g:shades_of_purple_airline = 1
-let g:airline_theme='shades_of_purple'
+"let g:shades_of_purple_airline = 1
+"let g:airline_theme='shades_of_purple'
+let g:airline_theme='papercolor'
 
 " ------------------------------------------------------------------------------
 
@@ -28,7 +32,5 @@ highlight clear LineNr
 highlight clear SignColumn
 
 " set cursorline
-" autocmd InsertEnter * highlight CursorLine guibg=#000050 guifg=fg
-" autocmd InsertLeave * highlight CursorLine guibg=#004000 guifg=fg
 
 " ------------------------------------------------------------------------------
