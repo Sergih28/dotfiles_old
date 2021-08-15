@@ -44,3 +44,9 @@ autocmd BufWinLeave * call clearmatches()
 
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
+" ------------------------------------------------------------------------------
+
+" ----- SET VUE FILETYPE AUTOMATICALLY -----------------------------------------
+
+autocmd BufReadPost,BufNewFile *.vue setfiletype html
