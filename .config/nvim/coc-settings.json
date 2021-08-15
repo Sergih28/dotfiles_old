@@ -1,8 +1,9 @@
 {
   "eslint.autoFixOnSave": true,
-  "cssmodules.hintName": "cssmodules",
   "coc.preferences.formatOnSaveFiletypes": [
     "vue",
+    "json",
+    "html",
     "javascript",
     "javascriptreact",
     "typescript",
