@@ -12,5 +12,15 @@
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": false,
   "prettier.semi": false,
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "diagnostic.locationlistUpdate": true,
+  "diagnostic.refreshOnInsertMode": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.errorSign": "⨯",
+  "diagnostic.infoSign": "i",
+  "markdownlint.config": {
+    "default": true,
+    "line_length": false
+  }
 }

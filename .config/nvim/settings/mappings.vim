@@ -33,6 +33,7 @@ nnoremap <silent> <leader>< :exe "vertical resize -4"<CR>
 " MOVE THROUGH BUFFERS
 nmap <leader>bn :bn<cr>
 nmap <leader>bp :bp<cr>
+nmap <leader>bd :bd<cr>
 
 " TAB LINES IN NORMAL MODE
 nnoremap <S-Tab> <<
@@ -74,8 +75,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gr <Plug>(coc-references)
 
 " Go to next/previous error message
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> dp <Plug>(coc-diagnostic-prev)
+nmap <silent> dn <Plug>(coc-diagnostic-next)
 
 " Show errors list
 nnoremap <silent> <leader>d :<C-u>CocList diagnostics<cr>
