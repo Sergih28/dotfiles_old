@@ -80,6 +80,9 @@ let g:coc_global_extensions = [
     \ 'coc-json',
     \ 'coc-html',
     \ 'coc-vetur',
+    \ 'coc-stylelintplus',
+    \ 'coc-yaml',
+    \ 'coc-markdownlint',
     \ ]
 "   \ '@yaegassy/coc-volar',
 "   \ 'coc-jsserver',
