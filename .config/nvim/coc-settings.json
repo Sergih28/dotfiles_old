@@ -21,6 +21,7 @@
   "diagnostic.infoSign": "i",
   "markdownlint.config": {
     "default": true,
-    "line_length": false
+    "line_length": false,
+    "no-inline-html": false
   }
 }
