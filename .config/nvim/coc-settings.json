@@ -23,5 +23,7 @@
     "default": true,
     "line_length": false,
     "no-inline-html": false
-  }
+  },
+  "styled-components.validate": true,
+  "vetur.ignoreProjectWarning": true
 }

@@ -33,6 +33,7 @@ Plug 'vim-airline/vim-airline'                               " Statusbar
 Plug 'vim-airline/vim-airline-themes'                        " Themes for statusbar
 
 " --- SYNTAX HIGHLIGHT
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }    " Styled Components Highlighting
 Plug 'pantharshit00/vim-prisma'                              " Prisma Syntax Highlighting
 "Plug 'p00f/nvim-ts-rainbow'                                  " Rainbow color brackets (need treesitter)
 Plug 'cespare/vim-toml'                                      " TOML Syntax Highlighting
@@ -83,6 +84,7 @@ let g:coc_global_extensions = [
     \ 'coc-stylelintplus',
     \ 'coc-yaml',
     \ 'coc-markdownlint',
+    \ 'coc-styled-components',
     \ ]
 "   \ '@yaegassy/coc-volar',
 "   \ 'coc-jsserver',
