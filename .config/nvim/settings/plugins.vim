@@ -85,6 +85,7 @@ let g:coc_global_extensions = [
     \ 'coc-yaml',
     \ 'coc-markdownlint',
     \ 'coc-styled-components',
+    \ 'coc-java',
     \ ]
 "   \ '@yaegassy/coc-volar',
 "   \ 'coc-jsserver',
