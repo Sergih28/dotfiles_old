@@ -60,7 +60,7 @@ truncation_symbol       = "*/"
 # ----- GIT --------------------------------------------------------------------
 
 [git_branch]
-format                  = "[$symbol$branch]($style)"
+format                  = "[$symbol$branch ]($style)"
 style                   = "bold purple"
 symbol                  = " "
 
